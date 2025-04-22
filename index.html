@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main</title>
+    <meta charset="utf-8" />
+    <style>
+        body {
+    background-color: rgb(10, 929, 129);
+    margin-bottom: 60px;
+    background-image: url(img1.jpg);
+    background-repeat: no-repeat ;
+    background-size: 100%;
+}
+    </style>
+</head>
+
+<body>
+
+<a href="result.html"> Список </a>
+
+    <form action="user" method="post">
+        <p>
+            <label>Название:</label><br>
+            <input name="taskname" />
+        </p>
+        <p>
+            <label>Выполнить до:</label><br>
+            <input name="expire" />
+        </p>
+        <p>
+            <label>Описание:</label><br>
+            <input name="taskdesc" />
+        </p>
+        <p>
+            <label>Теги:</label><br>
+            <input name="tasktags" />
+        </p>
+        <p>
+            <label>Приоритет:</label><br>
+            <input name="prioryty" type="number" />
+        </p>
+        <input type="submit" value="Добавить" />
+            </form>
+            <a href="delete.html"> Удалить запись по названию </a>
+</body>
+
+</html>
