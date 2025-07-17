@@ -65,9 +65,6 @@ async function deleteobj(objectN)
         fs.readFile("delete.html", (_, data) => response.write(data));
     }
 
-       
-
-
   }).listen(3000, ()=>console.log("Сервер запущен по адресу http://localhost:3000"));
 
   
