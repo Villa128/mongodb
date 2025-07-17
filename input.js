@@ -9,9 +9,6 @@ const url = "mongodb://127.0.0.1:27017/";
 const mongoClient = new MongoClient(url);
 
 
-
-
-
 http.createServer(async (request, response) => {
      
     if (request.url === "/user") {
@@ -44,8 +41,6 @@ http.createServer(async (request, response) => {
        Task = {taskName, taskExpire, taskDesc, taskTags, taskPr};
 
        response.end(`Task name: ${taskName}  Expire: ${taskExpire} Description: ${taskDesc} Tag: ${taskTags} Prior.: ${taskPr} `);
-
-
        
    }
    else{
