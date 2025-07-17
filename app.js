@@ -55,10 +55,6 @@ async function printData() {
             writeableStream.write(`<br>name: ${doc.taskName}, expire: ${doc.taskExpire},</br> `);
             console.log(`name: ${doc.taskName}, expire: ${doc.taskExpire}`);
             
-            
-            
-            
-
         });
 
         console.log("Finished printing data.");
@@ -75,14 +71,7 @@ printData().catch(console.dir);
 
 http.createServer(async (request, response) => {
 
-    
-
-
-
     if (request.url === "/user") {}   // буфер для получаемых данных
-        
-         
-
 
 run().catch(console.error);
 }).listen(3000, ()=>console.log("Сервер запущен по адресу http://localhost:3000"));
